@@ -4,14 +4,11 @@
 * [Astrauskas et. al OOPSLA'2020][[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMathejaPoliMuellerSummers20.pdf)]: how unsafe code is used
 
 ### Classes of Bugs: 
-* [Qin et. al PLDI'2020][[PDF](https://cseweb.ucsd.edu/~yiying/RustStudy-PLDI20.pdf)]
- the study indentifies patterns of bugs and offers some insight into their common repairs too, distinguising between memory safety issues and concurrency specific ones:
-  * 50 memory-safety bugs: invalid acceses (buffer overflow, null pointer dereferencing, read uninitialized memory) and 
-  lifetime violations (invalid free, use after free, double free).
-  * thread safety issues: 59 blocking bugs (due to double locking, wrong order of locking - tricky because of Rust's implicit lock release, channel size, codevar),
-  41 non-blocking bugs (data races may occure not only due to unsafe code, but also in safe one)
-  * [benchmarks](https://github.com/system-pclub/rust-study): five large open-source applications (Servo---browser, TiKV---key-value store, Parity Ethereum, Redox---OS, Tock---embedded OS) and five widely-used libraries (Rand, Crossbeam, Thredpool, Rayon, Lazy_static)
-  * [bug analysis](https://github.com/system-pclub/rust-study#8-bug-detection-section-7) method: mostly manual effrot by inspecting CVEs and commit messages. The work also comes accompanied by an UAF detector (works on MIR) and a double-lock detecor (works on LLVM). 
+* [Qin et. al PLDI'2020]
+  [[PDF](https://cseweb.ucsd.edu/~yiying/RustStudy-PLDI20.pdf)]
+  [[Benchmarks](https://github.com/system-pclub/rust-study)]
+  the study indentifies patterns of bugs and offers some insight into their common repairs too, distinguising between memory safety    issues and concurrency specific ones.
+
 * [Xu et. al arXiv'2021][[PDF](https://arxiv.org/pdf/2003.03296.pdf)]:
   *  186 memory-safety bugs: buffer overflow, read uninitialized memory, use after free, double free.
   *  [benchmarks](https://github.com/Artisan-Lab/Rust-memory-safety-bugs): Advisory-DB, Trophy Cases, rustc, plus 5 open-source projects 

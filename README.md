@@ -41,6 +41,9 @@
    [[Video](https://www.youtube.com/watch?v=vMGilPbIotw)]- interpreter that supports both concrete and abstract values from the interval and tag domains. (the classes of bugs are unclear to me as of now)
    #mir #unsafe
  * RMC [[GitHub]https://github.com/model-checking/rmc)] - Rust Model Checker (not much info - need to contact authors)
+ * SMACK [[GitHub](https://github.com/smackers/smack)]
+  [[Video](https://www.youtube.com/watch?v=0DcIn7kiNxM)] - relies on LLVM IR and Boogie IVL to verify Rust code. 
+  #llvm
  * SafeDrop [[PDF](https://arxiv.org/pdf/2103.15420.pdf)] [Cui et. al arVix'2021]
  * UnsafeFencer [[GitHub](https://github.com/qorost/unsafefencer)][[PDF](https://www.jstage.jst.go.jp/article/transinf/E101.D/8/E101.D_2018EDL8040/_pdf)][Huang et.al 2018]
 

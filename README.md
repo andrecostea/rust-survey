@@ -36,13 +36,23 @@
 
 ## Analysis
 ### Static
-
+ * MIRAI [[GitHub](https://github.com/facebookexperimental/MIRAI)]
+   [[Detailed description](https://github.com/facebookexperimental/MIRAI/blob/master/documentation/Overview.md)] 
+   [[Video](https://www.youtube.com/watch?v=vMGilPbIotw)]- interpreter that supports both concrete and abstract values from the interval and tag domains. (the classes of bugs are unclear to me as of now)
+   #mir #unsafe
+ * RMC [[GitHub]https://github.com/model-checking/rmc)] - Rust Model Checker (not much info - need to contact authors)
  * SafeDrop [[PDF](https://arxiv.org/pdf/2103.15420.pdf)] [Cui et. al arVix'2021]
  * UnsafeFencer [[GitHub](https://github.com/qorost/unsafefencer)][[PDF](https://www.jstage.jst.go.jp/article/transinf/E101.D/8/E101.D_2018EDL8040/_pdf)][Huang et.al 2018]
 
 ### Dynamic
+ * MIRI [[GitHub](https://github.com/rust-lang/miri)] - interpreter for MIR, can detect certain classes of memory errors and data races. It aslo supports [Stacked Borrows](https://plv.mpi-sws.org/rustbelt/stacked-borrows/) to check for violation of pointer aliasing discipline in unsafe code. 
 
 ## Tool Support
+
+## Check these blogs and presentations 
+* http://smallcultfollowing.com/babysteps/
+* https://hackmd.io/RiztubvfT4eOk4-4nM8Y7Q?view
+* https://www.ralfj.de/blog
 
 
 Vytautas Astrauskas, Christoph Matheja, Federico Poli, Peter Müller, and Alexander J. Summers. 2020. How do programmers use unsafe rust? Proc. ACM Program. Lang. 4, OOPSLA, Article 136 (November 2020), 27 pages. DOI:https://doi.org/10.1145/3428204

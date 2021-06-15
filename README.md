@@ -7,12 +7,15 @@
 * [Qin et. al PLDI'2020]
   [[PDF](https://cseweb.ucsd.edu/~yiying/RustStudy-PLDI20.pdf)]
   [[Benchmarks](https://github.com/system-pclub/rust-study)]
-  the study indentifies patterns of bugs and offers some insight into their common repairs too, distinguising between memory safety    issues and concurrency specific ones.
+  [[Notes](paper-notes/bugs-pldi2020.md)]
+  indentifies patterns of bugs and offers some insight into their common repairs too, distinguising between memory safety issues and concurrency specific ones.
+   #unsafe #memorybugs #concurrency
 
-* [Xu et. al arXiv'2021][[PDF](https://arxiv.org/pdf/2003.03296.pdf)]:
-  *  186 memory-safety bugs: buffer overflow, read uninitialized memory, use after free, double free.
-  *  [benchmarks](https://github.com/Artisan-Lab/Rust-memory-safety-bugs): Advisory-DB, Trophy Cases, rustc, plus 5 open-source projects 
-  *  bug analysis method: manual inspection. 
+* [Xu et. al arXiv'2021]
+  [[PDF](https://arxiv.org/pdf/2003.03296.pdf)]
+  [[Benchmarks](https://github.com/Artisan-Lab/Rust-memory-safety-bugs)]
+  [[Notes](paper-notes/bugs-arxiv2021.md)] focuses on memory-safety bugs.
+  #unsafe #memorybugs
 
 ## Verification
 ### Safe Code

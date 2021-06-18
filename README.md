@@ -53,9 +53,12 @@
 ## Tool Support
 
 ## Check these blogs and presentations 
-* http://smallcultfollowing.com/babysteps/
-* https://hackmd.io/RiztubvfT4eOk4-4nM8Y7Q?view
-* https://www.ralfj.de/blog
+* rust-lang development: http://smallcultfollowing.com/babysteps/
+* How can we use the compiler's interanls for building analysis tools: https://hackmd.io/RiztubvfT4eOk4-4nM8Y7Q?view
+* On StackBorrows/RustBelt/MIRI and others: https://www.ralfj.de/blog
+* Tools and applications: https://github.com/rust-unofficial/awesome-rust
+* A list of verifications tools: https://alastairreid.github.io/rust-verification-tools/
+
 
 
 ## References

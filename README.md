@@ -38,7 +38,7 @@
 ### Static
  * MIRAI [[GitHub](https://github.com/facebookexperimental/MIRAI)]
    [[Detailed description](https://github.com/facebookexperimental/MIRAI/blob/master/documentation/Overview.md)] 
-   [[Video](https://www.youtube.com/watch?v=vMGilPbIotw)]- interpreter that supports both concrete and abstract values from the interval and tag domains. (the classes of bugs are unclear to me as of now)
+   [[Video](https://www.youtube.com/watch?v=vMGilPbIotw)]- interpreter that supports both concrete and abstract values from the interval and tag domains. (the classes of bugs are unclear to me as of now, but I suspect it's only taint analysis)
    #mir #unsafe
  * RMC [[GitHub]https://github.com/model-checking/rmc)] - Rust Model Checker (not much info - need to contact authors)
  * SMACK [[GitHub](https://github.com/smackers/smack)]

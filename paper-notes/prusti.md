@@ -20,6 +20,8 @@ Prusti ran 3 kinds of *experiments*:
 * medium scale---checked over 500 functions for integer overflows and divisions by zero. Interestingly, 467 have had errors because of assumptions over the arguments, assumptions which have not been enforced. 
 * small scale---11 toy examples of max 80 LOC where they highlighted the functionality of the correctness specs provided by the user. 
 
+TODO: supported language features, unsupported language features (unsafe code)
+
 ## Thoughts on APR:
 
 While Prusti is a great piece of work with its fully automatic approach, it _does not handle unsafe_ code. That immediately excludes a large class of bugs we could tackle---memory bugs, concurrency bugs---which mostly emerge when a combination of safe and unsafe code is used. 

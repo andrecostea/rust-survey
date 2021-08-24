@@ -7,12 +7,12 @@
 Prusti is an automatic verifier for Rust code which works on MIR. In a nutshell, Prusti: 
 * extracts the CFG representation of Rust code, translating each Rust function to a Viper method, each Rust pure function to a Viper function, and
 * collects the type information provided by `rustc`, translating it into specifications written in [Viper's intermediate verification language](https://doi.org/10.1007/978-3-662-49122-5_2) (each Rust type will be a Viper predicate), and, finally, 
-* verifies that the translated source code is a refinement of the ascribed specification---synthesise a core proof, and
+* verifies that the translated source code is a refinement of the ascribed specification---synthesises a core proof, and
 * translates the verification results from Viper back to Rust, reporting them via Rust compiler’s error reporting mechanisms. 
 
 Additionally to the above guarantees, namely that every type-checked program is successfully verified, Prusti also allows programmers to write _functional specifications_ which complement the type-safe information to offer stronger correctness guarantees. 
 
-Prusti, relying on Viper, synthesise a core proof of _memory safety_ (exclusive capability for each mutable memory location, shared capability in the presence of multiple aliases to the same memory location) of the program in a flavour of separation logic: [implicit dynamic frames](https://doi.org/10.1007/978-3-642-03013-0_8).  
+Prusti, relying on Viper, synthesises a core proof of _memory safety_ (exclusive capability for each mutable memory location, shared capability in the presence of multiple aliases to the same memory location) of the program in a flavour of separation logic: [implicit dynamic frames](https://doi.org/10.1007/978-3-642-03013-0_8).  
 
 
 Prusti ran 3 kinds of *experiments*:

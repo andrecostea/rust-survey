@@ -29,13 +29,16 @@
     Verifies the translated program for memory safety using the information provided by Rust's type system, and for functional correctness by adding support for user provided specification in Rust programs. #separation-logic #mir  
     * [[PDF](https://www.cs.ubc.ca/~alexsumm/papers/WolffBilyMathejaMuellerSummers21.pdf)]
   [[notes](paper-notes/prusti.md) on Wolff et. al OOPSLA'21] - specification and verification of closure-manipulating
-code in Rust in the presence of side effects on closure arguments and captured state. It relies on Rust's type system for deriving a strong framing guarantee, namely that only the mutationm allowed on a captured state is by the closure itself. 
+code in Rust in the presence of side effects on closure arguments and captured state. It relies on Rust's type system for deriving a strong framing guarantee, namely that the only mutation allowed on a captured state is by the closure itself. 
 
 ### Unsafe Code
 * RustBelt [[Homepage](https://plv.mpi-sws.org/rustbelt/)]
-  [[PDF](https://people.mpi-sws.org/~dreyer/papers/rustbelt/paper.pdf)]
-  [[notes](paper-notes/rustbelt.md) on Jung et. al POPL'2018] - machine checked safety proofs for a subset of Rust. In particular, it      derives the sufficient safety conditions for libraries using unsafe code to be deemed as safe. It works on lambda-rust, a language similar to MIR, hence RustBelt still needs a human in the loop to do the translation from MIR to lambda-rust. 
-  #separation-logic #mir #coq 
+     * [[PDF](https://people.mpi-sws.org/~dreyer/papers/rustbelt/paper.pdf)]
+    [[notes](paper-notes/rustbelt.md) on Jung et. al POPL'18] - machine checked safety proofs for a subset of Rust. In particular, it      derives the sufficient safety conditions for libraries using unsafe code to be deemed as safe. It works on lambda-rust, a language similar to MIR, hence RustBelt still needs a human in the loop to do the translation from MIR to lambda-rust. 
+    #separation-logic #mir #coq 
+    * [[PDF](http://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf)]
+    [[notes](paper-notes/rustbelt.md) on Yanovski et. al ICFP'21] - proposes a new Rust API, namely GhostCell, to safely implement data structures with internal sharing. The key enabler of this API is the separation of permissions from data, i.e. tracks permissions
+separately from the data they control.
 
 ## Analysis
 ### Static
@@ -79,6 +82,8 @@ Mohan Cui, Chengjun Chen, Hui Xu, Yangfan Zhou. 2021. SafeDrop: Detecting Memory
 Zhijian Huang, Yong Jun Wang, Jing Liu. 2018. Detecting Unsafe Raw Pointer Dereferencing Behavior in Rust. IEICE Trans. Inf. Syst., 101-D, 2150-2153.
 
 Ralf Jung, Jacques-Henri Jourdan, Robbert Krebbers, and Derek Dreyer. 2017. RustBelt: securing the foundations of the Rust programming language. Proc. ACM Program. Lang. 2, POPL, Article 66 (January 2018), 34 pages. DOI:https://doi.org/10.1145/3158154
+
+Joshua Yanovski, Hoang-Hai Dang, Ralf Jung, and Derek Dreyer. 2021. GhostCell: Separating Permissions from Data in Rust. In Proc. ACM Program. Lang., Vol. 5, No. ICFP, Article 92. Publication date: August 2021. https://dl.acm.org/doi/10.1145/3473597
 
 Boqin Qin, Yilun Chen, Zeming Yu, Linhai Song, and Yiying Zhang. 2020. Understanding memory and thread safety practices and issues in real-world Rust programs. In <i>Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation</i> (<i>PLDI 2020</i>). Association for Computing Machinery, New York, NY, USA, 763–779. DOI:https://doi.org/10.1145/3385412.3386036
 

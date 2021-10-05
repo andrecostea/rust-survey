@@ -23,10 +23,13 @@
   [[Homepage](https://www.pm.inf.ethz.ch/research/prusti.html)]
   [[GitHub](https://github.com/viperproject/prusti-dev)] 
   [[VS code extension](https://github.com/viperproject/prusti-assistant)] 
-  [[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMuellerPoliSummers19.pdf)]
-  [[notes](paper-notes/prusti.md) on Astrauskas et. al OOPSLA'2019] - translates Rust programs
+     * [[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMuellerPoliSummers19.pdf)]
+  [[notes](paper-notes/prusti.md) on Astrauskas et. al OOPSLA'19] - translates Rust programs
     and specifications into the intermediate language used by [Viper](https://www.pm.inf.ethz.ch/research/viper.html). 
     Verifies the translated program for memory safety using the information provided by Rust's type system, and for functional correctness by adding support for user provided specification in Rust programs. #separation-logic #mir  
+    * [[PDF](https://www.cs.ubc.ca/~alexsumm/papers/WolffBilyMathejaMuellerSummers21.pdf)]
+  [[notes](paper-notes/prusti.md) on Wolff et. al OOPSLA'21] - specification and verification of closure-manipulating
+code in Rust in the presence of side effects on closure arguments and captured state. It relies on Rust's type system for deriving a strong framing guarantee, namely that only the mutationm allowed on a captured state is by the closure itself. 
 
 ### Unsafe Code
 * RustBelt [[Homepage](https://plv.mpi-sws.org/rustbelt/)]
@@ -69,6 +72,8 @@ Vytautas Astrauskas, Christoph Matheja, Federico Poli, Peter Müller, and Alexan
 
 Vytautas Astrauskas, Peter Müller, Federico Poli, and Alexander J. Summers. 2019. Leveraging rust types for modular specification and verification. Proc. ACM Program. Lang. 3, OOPSLA, Article 147 (October 2019), 30 pages. DOI:https://doi.org/10.1145/3360573
 
+Fabian Wolff, Aurel Bílý, Christoph Matheja, Peter Müller, and Alexander J. Summers. 2021. Modular Specification and Verification of Closures in Rust. In Proc. ACM Program. Lang., Vol. 5, No. OOPSLA, Article 145. Publication date: October 2021
+
 Mohan Cui, Chengjun Chen, Hui Xu, Yangfan Zhou. 2021. SafeDrop: Detecting Memory Deallocation Bugs of Rust Programs via Static Data-Flow Analysis. arVix.
 
 Zhijian Huang, Yong Jun Wang, Jing Liu. 2018. Detecting Unsafe Raw Pointer Dereferencing Behavior in Rust. IEICE Trans. Inf. Syst., 101-D, 2150-2153.
@@ -78,4 +83,5 @@ Ralf Jung, Jacques-Henri Jourdan, Robbert Krebbers, and Derek Dreyer. 2017. Rust
 Boqin Qin, Yilun Chen, Zeming Yu, Linhai Song, and Yiying Zhang. 2020. Understanding memory and thread safety practices and issues in real-world Rust programs. In <i>Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation</i> (<i>PLDI 2020</i>). Association for Computing Machinery, New York, NY, USA, 763–779. DOI:https://doi.org/10.1145/3385412.3386036
 
 Hui Xu, Zhuangbin Chen, Mingshen Sun, Yangfan Zhou, Michael Lyu. 2021. Memory-safety challenge considered solved? An in-depth study with all Rust CVEs. arXiv.
+
 

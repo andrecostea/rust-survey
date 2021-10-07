@@ -66,6 +66,7 @@ separately from the data they control.
 * On StackBorrows/RustBelt/MIRI and others: https://www.ralfj.de/blog
 * Tools and applications: https://github.com/rust-unofficial/awesome-rust
 * A list of verifications tools: https://alastairreid.github.io/rust-verification-tools/
+* A Guideline for Unsafe Code: https://github.com/rust-lang/unsafe-code-guidelines
 
 
 

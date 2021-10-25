@@ -62,7 +62,7 @@ separately from the data they control.
 ## Semantics Formalization
   * Oxide [[PDF](https://arxiv.org/pdf/1903.00982)] [[Slides](https://aaronweiss.us/pubs/popl19-src-oxide-slides.pdf)] [Weiss et. al arXiv'19]
   * KRust [[PDF](https://arxiv.org/pdf/1804.10806)] [Want et. al TASE'18]
-  * [[PDF](https://arxiv.org/pdf/1804.07608.pdf)] [Kan et. al arXiv'18]
+  * RustSEM [[PDF](https://arxiv.org/pdf/1804.07608.pdf)] [Kan et. al arXiv'18]
 
 ## Tool Support
 * [`clippy`](https://github.com/rust-lang/rust-clippy) - offers a collection of existing lints and an interface to easily [[create a custom lint](https://github.com/rust-lang/rust-clippy/blob/master/doc/adding_lints.md)]. The lints work on ASTs at HIR level. 

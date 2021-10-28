@@ -57,6 +57,7 @@ separately from the data they control.
  * MIRI [[GitHub](https://github.com/rust-lang/miri)] - interpreter for MIR, can detect certain classes of memory errors and data races. It aslo supports [Stacked Borrows](https://plv.mpi-sws.org/rustbelt/stacked-borrows/) to check for violation of pointer aliasing discipline in unsafe code. 
 
 ## Testing
+  * RMC [[GitHub](https://github.com/model-checking/rmc)] [[Post](https://whileydave.com/2021/10/26/test-driving-the-rust-model-checker-rmc/)] -  CBMC for Rust. Work on converting MIR to the input language of CBMC. #mir
   * SyRust [[PDF](https://kilthub.cmu.edu/articles/report/SyRust_Automatic_Testing_of_Rust_Libraries_with_Semantic-Aware_Program_Synthesis_Technical_Report/14356949)]
 
 ## Semantics Formalization

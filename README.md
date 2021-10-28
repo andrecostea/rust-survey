@@ -79,7 +79,8 @@ separately from the data they control.
   * [Sam et. al ACSW'17] 
     [[PDF](https://homepages.ecs.vuw.ac.nz/~alex/files/SamCameronPotaninACSC2017.pdf)] 
     [[GitHub](https://github.com/GSam/rust-refactor)] - syntactic changes (variable renaming, inlining, lifetime elission from functio signature)
-  
+  * [Zborowski'17]  [[PDF](https://homepages.cwi.nl/~jurgenv/theses/AdrianZborowski.pdf)] - refactoring rust output from the outdated `corrode` c-to-rust translator; loops, and basic ownership translation.
+
 ## Semantics Formalization
   * Oxide [[PDF](https://arxiv.org/pdf/1903.00982)] [[Slides](https://aaronweiss.us/pubs/popl19-src-oxide-slides.pdf)] [Weiss et. al arXiv'19]
   * KRust [[PDF](https://arxiv.org/pdf/1804.10806)] [Want et. al TASE'18]
@@ -130,5 +131,6 @@ Aaron Weiss, Daniel Patterson, Nicholas D. Matsakis, Amal Ahmed: "Oxide: The Ess
 
 Hui Xu, Zhuangbin Chen, Mingshen Sun, Yangfan Zhou, Michael Lyu. 2021. Memory-safety challenge considered solved? An in-depth study with all Rust CVEs. arXiv.
 
+Zborowski, Adrian. "Framework for Idiomatic Refactoring of Rust Programming Language Code."
 
 

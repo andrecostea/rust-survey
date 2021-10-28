@@ -1,7 +1,11 @@
+# Rust
+
+.rs ---> AST (macrto expans) ---> HIR (type checking) ---> MIR ---> LLVM ---> exec
+
 ## Empirical Studies
 
 ### Usage of Rust
-* [Astrauskas et. al OOPSLA'2020][[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMathejaPoliMuellerSummers20.pdf)]: how unsafe code is used'
+* [Astrauskas et. al OOPSLA'2020][[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMathejaPoliMuellerSummers20.pdf)]: how unsafe code is used
 * [Mehmet et. al OOPSLA'21] Sources of unsafety in code automatically translated by [c2rust](https://c2rust.com/) - [See below](#code-transpiling-and-refactoring)
 
 ### Classes of Bugs: 

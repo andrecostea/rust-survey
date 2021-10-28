@@ -2,7 +2,7 @@
 
 ### Usage of Rust
 * [Astrauskas et. al OOPSLA'2020][[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMathejaPoliMuellerSummers20.pdf)]: how unsafe code is used'
-* Sources of unsafety in code automatically translated by [c2rust](https://c2rust.com/) - [See below](#code-transpiling-and-refactoring)
+* [Mehmet et. al OOPSLA'21] Sources of unsafety in code automatically translated by [c2rust](https://c2rust.com/) - [See below](#code-transpiling-and-refactoring)
 
 ### Classes of Bugs: 
 * [Qin et. al PLDI'2020]
@@ -63,12 +63,14 @@ separately from the data they control.
 
 ## Code transpiling and refactoring
   * [`c2rust`](https://c2rust.com/) -  translates C code to unsafe Rust
-  * Translating C to unsfe Rust and lifting raw pointers to Optional references 
-    [Mehmet et. al OOPSLA'21]
+  * [Mehmet et. al OOPSLA'21]
     [[PDF](https://dl.acm.org/doi/pdf/10.1145/3485498)] 
     [[Artefact](https://zenodo.org/record/5442253#.YXoVchBBxTY)] 
-    [[Translation Rules](https://sites.cs.ucsb.edu/~benh/research/papers/oopsla21-supplementary.pdf)]
-
+    [[Translation Rules](https://sites.cs.ucsb.edu/~benh/research/papers/oopsla21-supplementary.pdf)] - translates C to unsafe Rust and lifts raw pointers to Optional references (in order to maintain the C interface)
+  * [Sam et. al ACSW'17] 
+    [[PDF](https://homepages.ecs.vuw.ac.nz/~alex/files/SamCameronPotaninACSC2017.pdf)] 
+    [[GitHub](https://github.com/GSam/rust-refactor)] - syntactic changes (variable renaming, inlining, lifetime elission from functio signature)
+  
 ## Semantics Formalization
   * Oxide [[PDF](https://arxiv.org/pdf/1903.00982)] [[Slides](https://aaronweiss.us/pubs/popl19-src-oxide-slides.pdf)] [Weiss et. al arXiv'19]
   * KRust [[PDF](https://arxiv.org/pdf/1804.10806)] [Want et. al TASE'18]
@@ -107,6 +109,8 @@ Shuanglong Kan, David Sanán, Shang-Wei Lin, Yang Liu: "K-Rust: An Executable Fo
 
 Mehmet Emre, Ryan Schroeder, Kyle Dewey, and Ben Hardekopf. 2021. Translating C to safer Rust. <i>Proc. ACM Program. Lang.</i> 5, OOPSLA, Article 121 (October 2021), 29 pages. DOI:https://doi.org/10.1145/3485498
 
+Garming Sam, Nick Cameron, and Alex Potanin. 2017. Automated refactoring of rust programs. In Proceedings of the Australasian Computer Science Week Multiconference (ACSW '17). Association for Computing Machinery, New York, NY, USA, Article 14, 1–9. DOI:https://doi.org/10.1145/3014812.3014826
+
 Joshua Yanovski, Hoang-Hai Dang, Ralf Jung, and Derek Dreyer. 2021. GhostCell: Separating Permissions from Data in Rust. In Proc. ACM Program. Lang., Vol. 5, No. ICFP, Article 92. Publication date: August 2021. https://dl.acm.org/doi/10.1145/3473597
 
 Boqin Qin, Yilun Chen, Zeming Yu, Linhai Song, and Yiying Zhang. 2020. Understanding memory and thread safety practices and issues in real-world Rust programs. In <i>Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation</i> (<i>PLDI 2020</i>). Association for Computing Machinery, New York, NY, USA, 763–779. DOI:https://doi.org/10.1145/3385412.3386036
@@ -116,5 +120,6 @@ F. Wang, F. Song, M. Zhang, X. Zhu and J. Zhang, "KRust: A Formal Executable Sem
 Aaron Weiss, Daniel Patterson, Nicholas D. Matsakis, Amal Ahmed: "Oxide: The Essence of Rust" CoRR abs/1903.00982 (2019)
 
 Hui Xu, Zhuangbin Chen, Mingshen Sun, Yangfan Zhou, Michael Lyu. 2021. Memory-safety challenge considered solved? An in-depth study with all Rust CVEs. arXiv.
+
 
 

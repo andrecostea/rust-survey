@@ -1,6 +1,11 @@
 # Rust
 
-.rs ---> AST (macrto expans) ---> HIR (type checking) ---> MIR ---> LLVM ---> exec
+&emsp;&emsp; .rs    
+---> AST (macro expansion)   
+---> HIR (type checking)   
+---> MIR (borrow checker & lifetime inference, optimizations; CFG)  
+---> LLVM    
+---> exec  
 
 ## Empirical Studies
 

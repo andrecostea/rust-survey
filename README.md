@@ -1,7 +1,8 @@
 ## Empirical Studies
 
 ### Usage of Rust
-* [Astrauskas et. al OOPSLA'2020][[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMathejaPoliMuellerSummers20.pdf)]: how unsafe code is used
+* [Astrauskas et. al OOPSLA'2020][[PDF](https://www.cs.ubc.ca/~alexsumm/papers/AstrauskasMathejaPoliMuellerSummers20.pdf)]: how unsafe code is used'
+* Sources of unsafety in code automatically translated by [c2rust](https://c2rust.com/) - [See below](#code-transpiling-and-refactoring)
 
 ### Classes of Bugs: 
 * [Qin et. al PLDI'2020]
@@ -16,7 +17,7 @@
   [[Benchmarks](https://github.com/Artisan-Lab/Rust-memory-safety-bugs)]
   [[Notes](paper-notes/bugs-arxiv2021.md)] focuses on memory-safety bugs.
   #unsafe #memorybugs
-
+  
 ## Verification
 ### Safe Code
 * Prusti 
@@ -60,6 +61,14 @@ separately from the data they control.
   * RMC [[GitHub](https://github.com/model-checking/rmc)] [[Post](https://whileydave.com/2021/10/26/test-driving-the-rust-model-checker-rmc/)] -  CBMC for Rust. Work on converting MIR to the input language of CBMC. #mir
   * SyRust [[PDF](https://kilthub.cmu.edu/articles/report/SyRust_Automatic_Testing_of_Rust_Libraries_with_Semantic-Aware_Program_Synthesis_Technical_Report/14356949)]
 
+## Code transpiling and refactoring
+  * [`c2rust`](https://c2rust.com/) -  translates C code to unsafe Rust
+  * Translating C to unsfe Rust and lifting raw pointers to Optional references 
+    [Mehmet et. al OOPSLA'21]
+    [[PDF](https://dl.acm.org/doi/pdf/10.1145/3485498)] 
+    [[Artefact](https://zenodo.org/record/5442253#.YXoVchBBxTY)] 
+    [[Translation Rules](https://sites.cs.ucsb.edu/~benh/research/papers/oopsla21-supplementary.pdf)]
+
 ## Semantics Formalization
   * Oxide [[PDF](https://arxiv.org/pdf/1903.00982)] [[Slides](https://aaronweiss.us/pubs/popl19-src-oxide-slides.pdf)] [Weiss et. al arXiv'19]
   * KRust [[PDF](https://arxiv.org/pdf/1804.10806)] [Want et. al TASE'18]
@@ -95,6 +104,8 @@ Zhijian Huang, Yong Jun Wang, Jing Liu. 2018. Detecting Unsafe Raw Pointer Deref
 Ralf Jung, Jacques-Henri Jourdan, Robbert Krebbers, and Derek Dreyer. 2017. RustBelt: securing the foundations of the Rust programming language. Proc. ACM Program. Lang. 2, POPL, Article 66 (January 2018), 34 pages. DOI:https://doi.org/10.1145/3158154
 
 Shuanglong Kan, David Sanán, Shang-Wei Lin, Yang Liu: "K-Rust: An Executable Formal Semantics for Rust". CoRR abs/1804.07608 (2018)
+
+Mehmet Emre, Ryan Schroeder, Kyle Dewey, and Ben Hardekopf. 2021. Translating C to safer Rust. <i>Proc. ACM Program. Lang.</i> 5, OOPSLA, Article 121 (October 2021), 29 pages. DOI:https://doi.org/10.1145/3485498
 
 Joshua Yanovski, Hoang-Hai Dang, Ralf Jung, and Derek Dreyer. 2021. GhostCell: Separating Permissions from Data in Rust. In Proc. ACM Program. Lang., Vol. 5, No. ICFP, Article 92. Publication date: August 2021. https://dl.acm.org/doi/10.1145/3473597
 

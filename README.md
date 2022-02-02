@@ -83,6 +83,7 @@ separately from the data they control.
   #llvm
  * SafeDrop [[PDF](https://arxiv.org/pdf/2103.15420.pdf)] [Cui et. al arVix'2021]
  * UnsafeFencer [[GitHub](https://github.com/qorost/unsafefencer)][[PDF](https://www.jstage.jst.go.jp/article/transinf/E101.D/8/E101.D_2018EDL8040/_pdf)][Huang et.al 2018]
+ * RUDRA [[GitHub](https://github.com/sslab-gatech/Rudra)][[PDF](https://taesoo.kim/pubs/2021/bae:rudra.pdf)] - used for detecting potential memory safety bugs in unsafe Rust (Panic Safety, Higher Order invariant, Send/Sync VAriance). They managed to run it on the entire Rust package registry  (a [list](https://github.com/sslab-gatech/Rudra-PoC) of all detected bugs). It is now integrated into the official Rust linter.  
 
 ### Dynamic
  * MIRI [[GitHub](https://github.com/rust-lang/miri)] - interpreter for MIR, can detect certain classes of memory errors and data races. It aslo supports [Stacked Borrows](https://plv.mpi-sws.org/rustbelt/stacked-borrows/) to check for violation of pointer aliasing discipline in unsafe code. 

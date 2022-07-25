@@ -61,6 +61,7 @@ code in Rust in the presence of side effects on closure arguments and captured s
 * RustHorn [[GitHub](https://github.com/hopv/rust-horn)] 
            [[PDF](https://arxiv.org/pdf/2002.09002.pdf)]
            [Yusuke et. al PLS'20]: uses Horn clauses to verify partial correctness. 
+* Creusot [[GitHub]https://github.com/xldenis/creusot]: deductive verification of Rust code; allows annotations. 
 
 ### Unsafe Code
 * RustBelt [[Homepage](https://plv.mpi-sws.org/rustbelt/)]

@@ -95,9 +95,12 @@ separately from the data they control.
 
 ## Code transpiling and refactoring
   * [`c2rust`](https://c2rust.com/) -  translates C code to unsafe Rust
+  * [Mehmet et. al OOPSLA'23]
+    [[PDF](https://dl.acm.org/doi/10.1145/3485498)]
+    [[Artefact](https://zenodo.org/record/7714175)] - transaltes C to Rust via `c2rust`, and builds on top of [`laertes`](https://dl.acm.org/doi/pdf/10.1145/3485498) now handling pointer arithmetic too. 
   * [Mehmet et. al OOPSLA'21]
     [[PDF](https://dl.acm.org/doi/pdf/10.1145/3485498)] 
-    [[Artefact](https://zenodo.org/record/5442253#.YXoVchBBxTY)] 
+    [[Artefact - laertes](https://zenodo.org/record/5442253#.YXoVchBBxTY)] 
     [[Translation Rules](https://sites.cs.ucsb.edu/~benh/research/papers/oopsla21-supplementary.pdf)] - translates C to unsafe Rust and lifts raw pointers to Optional references (in order to maintain the C interface)
   * [Sam et. al ACSW'17] 
     [[PDF](https://homepages.ecs.vuw.ac.nz/~alex/files/SamCameronPotaninACSC2017.pdf)] 

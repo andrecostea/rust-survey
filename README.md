@@ -89,12 +89,18 @@ separately from the data they control.
 ### Dynamic
  * MIRI [[GitHub](https://github.com/rust-lang/miri)] - interpreter for MIR, can detect certain classes of memory errors and data races. It aslo supports [Stacked Borrows](https://plv.mpi-sws.org/rustbelt/stacked-borrows/) to check for violation of pointer aliasing discipline in unsafe code. 
 
+## Synthesis
+  * RUSSOL
+    [[PDF](https://ilyasergey.net/assets/pdf/papers/russol-pldi23.pdf)]
+    [[Artefact](https://zenodo.org/record/7811786)] -  synthesizing correct-by-construction programs in safe Rust from functional correctness specifications.
 ## Testing
   * RMC [[GitHub](https://github.com/model-checking/rmc)] [[Post](https://whileydave.com/2021/10/26/test-driving-the-rust-model-checker-rmc/)] -  CBMC for Rust. Work on converting MIR to the input language of CBMC. #mir
   * SyRust [[PDF](https://kilthub.cmu.edu/articles/report/SyRust_Automatic_Testing_of_Rust_Libraries_with_Semantic-Aware_Program_Synthesis_Technical_Report/14356949)]
 
 ## Code transpiling and refactoring
   * [`c2rust`](https://c2rust.com/) -  translates C code to unsafe Rust
+  * [Zhang et. al CAV'23]
+    [[PDF](https://arxiv.org/abs/2303.10515)] - automated C to Rust translation grounded in static ownership analysis.
   * [Mehmet et. al OOPSLA'23]
     [[PDF](https://dl.acm.org/doi/10.1145/3485498)]
     [[Artefact](https://zenodo.org/record/7714175)] - transaltes C to Rust via `c2rust`, and builds on top of [`laertes`](https://dl.acm.org/doi/pdf/10.1145/3485498) now handling pointer arithmetic too. 
@@ -142,6 +148,8 @@ Vytautas Astrauskas, Peter Müller, Federico Poli, and Alexander J. Summers. 201
 
 Fabian Wolff, Aurel Bílý, Christoph Matheja, Peter Müller, and Alexander J. Summers. 2021. Modular Specification and Verification of Closures in Rust. In Proc. ACM Program. Lang., Vol. 5, No. OOPSLA, Article 145. Publication date: October 2021
 
+Zhang, H., David, C., Yu, Y., & Wang, M. (2023). Ownership guided C to Rust translation. ArXiv, abs/2303.10515.
+
 Mohan Cui, Chengjun Chen, Hui Xu, Yangfan Zhou. 2021. SafeDrop: Detecting Memory Deallocation Bugs of Rust Programs via Static Data-Flow Analysis. arVix.
 
 Ana Nora Evans, Bradford Campbell, and Mary Lou Soffa. 2020. Is rust used safely by software developers? In <i>Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering</i> (<i>ICSE '20</i>). Association for Computing Machinery, New York, NY, USA, 246–257. DOI:https://doi.org/10.1145/3377811.3380413
@@ -155,6 +163,8 @@ Shuanglong Kan, David Sanán, Shang-Wei Lin, Yang Liu: "K-Rust: An Executable Fo
 Peiming Liu, Gang Zhao, and Jeff Huang. 2020. Securing unsafe rust programs with XRust. In Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering (ICSE '20). Association for Computing Machinery, New York, NY, USA, 234–245. DOI:https://doi.org/10.1145/3377811.3380325
 
 Mehmet Emre, Ryan Schroeder, Kyle Dewey, and Ben Hardekopf. 2021. Translating C to safer Rust. <i>Proc. ACM Program. Lang.</i> 5, OOPSLA, Article 121 (October 2021), 29 pages. DOI:https://doi.org/10.1145/3485498
+
+Mehmet Emre, Peter Boyland, Aesha Parekh, Ryan Schroeder, Kyle Dewey, and Ben Hardekopf. 2023. Aliasing Limits on Translating C to Safe Rust. Proc. ACM Program. Lang. 7, OOPSLA1, Article 94 (April 2023), 29 pages. https://doi.org/10.1145/3586046
 
 Garming Sam, Nick Cameron, and Alex Potanin. 2017. Automated refactoring of rust programs. In Proceedings of the Australasian Computer Science Week Multiconference (ACSW '17). Association for Computing Machinery, New York, NY, USA, Article 14, 1–9. DOI:https://doi.org/10.1145/3014812.3014826
 

@@ -103,7 +103,9 @@ separately from the data they control.
     [[PDF](https://arxiv.org/abs/2303.10515)] - automated C to Rust translation grounded in static ownership analysis.
   * [Mehmet et. al OOPSLA'23]
     [[PDF](https://dl.acm.org/doi/10.1145/3485498)]
-    [[Artefact](https://zenodo.org/record/7714175)] - transaltes C to Rust via `c2rust`, and builds on top of [`laertes`](https://dl.acm.org/doi/pdf/10.1145/3485498) now handling pointer arithmetic too. 
+    [[Artefact](https://zenodo.org/record/7714175)] - transaltes C to Rust via `c2rust`, and builds on top of [`laertes`](https://dl.acm.org/doi/pdf/10.1145/3485498) now handling pointer arithmetic too.
+  * [Han et al. QRS-C'22]
+    [[PDF](https://csslab-ustc.github.io/publications/2023/rust-dup.pdf)] - Rusty
   * [Mehmet et. al OOPSLA'21]
     [[PDF](https://dl.acm.org/doi/pdf/10.1145/3485498)] 
     [[Artefact - laertes](https://zenodo.org/record/5442253#.YXoVchBBxTY)] 
@@ -165,6 +167,8 @@ Peiming Liu, Gang Zhao, and Jeff Huang. 2020. Securing unsafe rust programs with
 Mehmet Emre, Ryan Schroeder, Kyle Dewey, and Ben Hardekopf. 2021. Translating C to safer Rust. <i>Proc. ACM Program. Lang.</i> 5, OOPSLA, Article 121 (October 2021), 29 pages. DOI:https://doi.org/10.1145/3485498
 
 Mehmet Emre, Peter Boyland, Aesha Parekh, Ryan Schroeder, Kyle Dewey, and Ben Hardekopf. 2023. Aliasing Limits on Translating C to Safe Rust. Proc. ACM Program. Lang. 7, OOPSLA1, Article 94 (April 2023), 29 pages. https://doi.org/10.1145/3586046
+
+X. Han, B. Hua, Y. Wang and Z. Zhang, "RUSTY: Effective C to Rust Conversion via Unstructured Control Specialization," 2022 IEEE 22nd International Conference on Software Quality, Reliability, and Security Companion (QRS-C), Guangzhou, China, 2022, pp. 760-761, doi: 10.1109/QRS-C57518.2022.00122.
 
 Garming Sam, Nick Cameron, and Alex Potanin. 2017. Automated refactoring of rust programs. In Proceedings of the Australasian Computer Science Week Multiconference (ACSW '17). Association for Computing Machinery, New York, NY, USA, Article 14, 1–9. DOI:https://doi.org/10.1145/3014812.3014826
 
